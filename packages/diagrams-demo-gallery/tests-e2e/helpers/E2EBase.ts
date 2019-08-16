@@ -20,7 +20,7 @@ export abstract class E2EBase {
 
 	async waitForElement(): Promise<ElementHandle | null> {
 		return (await this.getSelector()).waitForSelector(this.selector(), {
-			timeout: 1000
+			timeout: 2000
 		});
 	}
 
